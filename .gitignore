@@ -15,3 +15,6 @@ coco/
 #voc2007/
 resnet_output_svm*
 .vscode*
+voc*
+coco*
+resnet*

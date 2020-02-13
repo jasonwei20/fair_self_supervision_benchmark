@@ -96,8 +96,8 @@ def _rename_weights_for_resnet(weights):
 
 def _load_pth_pickled_weights(file_path):
     checkpoint = torch.load(file_path)
-    if "state_dict" in checkpoint:
-        weights = checkpoint["state_dict"]
+    if "model_state_dict" in checkpoint:
+        weights = checkpoint["model_state_dict"]
     else:
         weights = checkpoint
     return weights
