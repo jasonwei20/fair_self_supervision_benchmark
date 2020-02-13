@@ -18,3 +18,4 @@ resnet_output_svm*
 voc*
 coco*
 resnet*
+converted_models/*
