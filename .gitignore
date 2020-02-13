@@ -13,3 +13,5 @@ __pycache__/
 imagenet1k/
 coco/
 #voc2007/
+resnet_output_svm*
+.vscode*
