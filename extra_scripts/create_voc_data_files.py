@@ -32,6 +32,7 @@ logger = logging.getLogger(__name__)
 
 def validate_files(input_files):
     """
+    
     The valid files will have name: <class_name>_<split>.txt. We want to remove
     all the other files from the input.
     """
@@ -107,6 +108,10 @@ def get_images_labels_info(split, args):
         img_paths.append(
             os.path.join(args.data_source_dir, 'JPEGImages', item + '.jpg'))
         img_labels.append(img_labels_map[item])
+
+    writer = open('image_file_order.csv', 'w')
+    for img_path in img_paths:
+        writer.write(img_path + '\n')
 
     output_dict = {}
     if args.generate_json:
