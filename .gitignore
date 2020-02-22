@@ -19,3 +19,5 @@ voc*
 coco*
 resnet*
 converted_models/*
+image_file_order.csv
+random_numpy_array.npy
